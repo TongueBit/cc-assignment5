@@ -1,5 +1,0 @@
-So an array starts at 10. If you try to add to the 
-array of n elements and it's n-1 full, it should 
-double in size, copy all elements to the new array and 
-add the new element.
- 
