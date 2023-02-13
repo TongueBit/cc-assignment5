@@ -24,7 +24,7 @@ public class CustomArrayList<T> implements CustomList<T> {
 		Object value = item;
 		Object tmp;
 		int i = index;
-		while(i < items.length-1) {
+		while(i < items.length) {
 			if(items[i] == null) {
 				items[i] = value;
 				return true;
@@ -32,8 +32,6 @@ public class CustomArrayList<T> implements CustomList<T> {
 			tmp = items[i];
 			items[i] = value;
 			value = tmp;
-			if(items[i+1] != null)
-				tmp = items[i+1];
 			i++;
 		}
 		return false;
